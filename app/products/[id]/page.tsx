@@ -5,5 +5,7 @@ export default async function ProductPage({ params }: { params: { id: string } }
   const product = await stripe.products.retrieve(params.id, {
     expand: ['default_price'],
   });
-  return <ProductDetail product={product} />;
+
+  const plainProduct = JSON.parse(JSON.stringify(product));
+  return <ProductDetail product={plainProduct} />;
 }
