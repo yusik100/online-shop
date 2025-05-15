@@ -44,7 +44,7 @@ export const useCartStore = create<CartStore>()(
           };
         }),
       clearCart: () =>
-        set((state) => {
+        set(() => {
           return { items: [] };
         }),
     }),
