@@ -34,8 +34,8 @@ export default async function Home() {
             alt='Banner Image'
             src={products.data[0].images[0]}
             className='rounded'
-            width={450}
-            height={450}
+            width={500}
+            height={500}
           />
         </div>
       </section>
