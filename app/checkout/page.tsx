@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useCartStore } from '@/store/cart-store';
 import { checkoutAction } from './checkout-action';
+import Image from 'next/image';
 
 export default function CheckoutPage() {
   const { items, removeItem, addItem, clearCart } = useCartStore();
@@ -12,6 +13,13 @@ export default function CheckoutPage() {
   if (items.length === 0) {
     return (
       <div className='container mx-auto px-4 py-8 text-center'>
+        <Image
+          className='mx-auto'
+          src='/empty-cart.png'
+          alt='Empty cart icon'
+          width='300'
+          height='300'
+        />
         <h1 className='text-3xl font-bold mb-4'>Your Cart is Empty.</h1>
       </div>
     );
