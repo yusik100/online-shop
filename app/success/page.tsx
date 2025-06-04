@@ -13,7 +13,7 @@ export default function SuccessPage() {
   return (
     <div className='container mx-auto px-4 py-8 text-center'>
       <Image
-        className='mx-auto'
+        className='mx-auto block mb-6'
         src='/check-mark.png'
         alt='Check mark icon'
         width='300'

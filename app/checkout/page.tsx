@@ -14,7 +14,7 @@ export default function CheckoutPage() {
     return (
       <div className='container mx-auto px-4 py-8 text-center'>
         <Image
-          className='mx-auto'
+          className='mx-auto block mb-6'
           src='/empty-cart.png'
           alt='Empty cart icon'
           width='300'
