@@ -11,15 +11,14 @@ export default async function Home() {
   });
 
   return (
-    <div className='bg-gray-50 text-gray-800'>
-      <section className='relative overflow-hidden bg-gradient-to-r from-indigo-50 to-white py-12 md:py-20'>
-        <div className='absolute -top-16 -left-16 h-64 w-64 rounded-full bg-indigo-200 opacity-30 animate-spin-slow z-0'></div>
-        <div className='absolute -bottom-20 -right-10 h-96 w-96 rounded-full bg-pink-100 opacity-20'></div>
+    <div className='text-gray-800'>
+      <section className='relative overflow-hidden bg-gradient-to-r from-cyan-50 to-white py-12 md:py-20'>
+        <div className='absolute -top-16 -left-16 h-64 w-64 rounded-full bg-cyan-200 opacity-30 animate-spin-slow z-0'></div>
 
         <div className='relative z-10 container mx-auto grid grid-cols-1 items-center gap-8 px-6 sm:px-8 md:grid-cols-2 lg:px-16'>
           <div className='space-y-6'>
-            <h2 className='text-4xl font-extrabold tracking-tight text-indigo-900 md:text-5xl lg:text-6xl'>
-              Welcome to <span className='text-indigo-600'>Yarn Shop</span>
+            <h2 className='text-4xl font-extrabold tracking-tight text-cyan-900 md:text-5xl lg:text-6xl'>
+              Welcome to <span className='text-cyan-600'>Yarn Shop</span>
             </h2>
             <p className='max-w-md text-lg text-gray-600'>
               Discover the finest yarns and accessories for your crafting projects at unbeatable
@@ -28,14 +27,14 @@ export default async function Home() {
             <Button
               asChild
               variant='default'
-              className='group relative inline-flex items-center overflow-hidden rounded-full bg-indigo-600 px-8 py-3 transition hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300'
+              className='group relative inline-flex items-center overflow-hidden rounded-full bg-cyan-600 px-8 py-3 transition hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-300'
             >
               <Link href='/products' className='flex items-center'>
                 <span className='text-base font-medium text-white transition group-hover:translate-x-1'>
                   Browse All Products
                 </span>
                 <svg
-                  className='ml-2 h-5 w-5 text-indigo-200 transition group-hover:translate-x-2'
+                  className='ml-2 h-5 w-5 text-cyan-200 transition group-hover:translate-x-2'
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
@@ -55,7 +54,7 @@ export default async function Home() {
           <div className='relative w-full max-w-lg overflow-hidden rounded-2xl shadow-xl ring-1 ring-gray-200'>
             <Image
               alt='Banner Image'
-              src={products.data[0]?.images[0]}
+              src={products.data[2]?.images[0]}
               width={600}
               height={600}
               className='h-auto w-full object-cover transition-transform duration-500 hover:scale-105'
@@ -66,9 +65,12 @@ export default async function Home() {
       </section>
 
       <section className='container mx-auto py-12 px-6 sm:px-8 lg:px-16'>
-        <h3 className='mb-6 text-center text-2xl font-semibold text-indigo-700'>
-          Popular Products
-        </h3>
+        <div className='mb-8'>
+          <h3 className='text-4xl font-extrabold text-center tracking-tight text-cyan-700'>
+            Popular Products
+          </h3>
+        </div>
+
         <div>
           <Carousel products={products.data} />
         </div>

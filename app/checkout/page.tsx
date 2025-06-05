@@ -21,13 +21,13 @@ export default function CheckoutPage() {
           width={200}
           height={200}
         />
-        <h1 className='text-3xl font-extrabold text-indigo-700 mb-4'>Your Cart Is Empty</h1>
+        <h1 className='text-3xl font-extrabold text-cyan-700 mb-4'>Your Cart Is Empty</h1>
         <p className='text-gray-600 mb-6'>
           Looks like you haven’t added anything to your cart yet.
         </p>
         <Button
           asChild
-          className='bg-indigo-600 text-white rounded-lg px-6 py-3 hover:bg-indigo-700 transition w-full sm:w-auto'
+          className='bg-cyan-600 text-white rounded-lg px-6 py-3 hover:bg-cyan-700 transition w-full sm:w-auto'
         >
           <Link href={'/products'}>Browse Products</Link>
         </Button>
@@ -38,7 +38,7 @@ export default function CheckoutPage() {
   return (
     <div className='bg-gray-50 py-12'>
       <div className='container mx-auto px-6 sm:px-8 lg:px-16'>
-        <h1 className='text-4xl font-extrabold text-indigo-700 text-center mb-10'>Checkout</h1>
+        <h1 className='text-4xl font-extrabold text-cyan-700 text-center mb-10'>Checkout</h1>
 
         <Card className='bg-white rounded-2xl shadow-lg ring-1 ring-gray-100 max-w-lg mx-auto mb-10'>
           <CardHeader className='px-6 pt-6'>
@@ -71,7 +71,7 @@ export default function CheckoutPage() {
                       <Button
                         variant='default'
                         size='sm'
-                        className='bg-indigo-600 text-white hover:bg-indigo-700'
+                        className='bg-cyan-600 text-white hover:bg-cyan-700'
                         onClick={() => addItem({ ...item, quantity: 1 })}
                       >
                         +
@@ -87,7 +87,7 @@ export default function CheckoutPage() {
 
             <div className='mt-6 pt-4 border-t border-gray-200 flex items-center justify-between'>
               <span className='text-lg font-medium text-gray-800'>Total:</span>
-              <span className='text-xl font-extrabold text-indigo-700'>
+              <span className='text-xl font-extrabold text-cyan-700'>
                 {(total / 100).toFixed(2)}₴
               </span>
             </div>
@@ -99,7 +99,7 @@ export default function CheckoutPage() {
 
           <Button
             type='submit'
-            className='w-full bg-indigo-600 text-white rounded-lg py-3 font-semibold hover:bg-indigo-700 transition'
+            className='w-full bg-cyan-600 text-white rounded-lg py-3 font-semibold hover:bg-cyan-700 transition'
           >
             Proceed to Payment
           </Button>
@@ -107,7 +107,7 @@ export default function CheckoutPage() {
           <Button
             type='button'
             variant='outline'
-            className='w-full border-indigo-600 text-indigo-600 rounded-lg py-3 hover:bg-indigo-50 transition'
+            className='w-full border-cyan-600 text-cyan-600 rounded-lg py-3 hover:bg-cyan-50 transition'
             onClick={() => clearCart()}
           >
             Clear Cart

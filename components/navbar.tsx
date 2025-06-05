@@ -26,27 +26,27 @@ export const Navbar = () => {
       <div className='container mx-auto flex items-center justify-between px-4 py-3 md:py-4'>
         <Link
           href='/'
-          className='text-2xl font-extrabold text-indigo-600 hover:text-indigo-700 transition'
+          className='text-2xl font-extrabold text-cyan-600 hover:text-cyan-700 transition'
         >
           Yarn Shop
         </Link>
 
-        <div className='hidden md:flex space-x-8'>
+        <div className='hidden md:flex space-x-6'>
           <Link
             href='/'
-            className='text-gray-700 inline-flex items-center px-3 py-2 text-sm font-medium transition hover:text-indigo-600'
+            className='text-gray-800 text-base font-normal transition hover:text-cyan-700'
           >
             Home
           </Link>
           <Link
             href='/products'
-            className='text-gray-700 inline-flex items-center px-3 py-2 text-sm font-medium transition hover:text-indigo-600'
+            className='text-gray-800 text-base font-normal transition hover:text-cyan-700'
           >
             Products
           </Link>
           <Link
             href='/checkout'
-            className='text-gray-700 inline-flex items-center px-3 py-2 text-sm font-medium transition hover:text-indigo-600'
+            className='text-gray-800 text-base font-normal transition hover:text-cyan-700'
           >
             Checkout
           </Link>
@@ -56,9 +56,9 @@ export const Navbar = () => {
           <Link href='/checkout' className='relative'>
             <button
               type='button'
-              className='relative flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 hover:bg-indigo-200 transition'
+              className='relative flex h-10 w-10 items-center justify-center rounded-full bg-cyan-100 hover:bg-cyan-200 transition'
             >
-              <ShoppingCartIcon className='h-6 w-6 text-indigo-600' />
+              <ShoppingCartIcon className='h-6 w-6 text-cyan-600' />
               {cartCount > 0 && (
                 <span className='absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-semibold text-white'>
                   {cartCount}
@@ -69,7 +69,7 @@ export const Navbar = () => {
 
           <Button
             variant='ghost'
-            className='p-2 md:hidden text-gray-700 hover:text-indigo-600 transition'
+            className='p-2 md:hidden text-gray-700 hover:text-cyan-600 transition'
             onClick={() => setMobileOpen((prev) => !prev)}
           >
             {mobileOpen ? <XMarkIcon className='h-6 w-6' /> : <Bars3Icon className='h-6 w-6' />}
@@ -83,7 +83,7 @@ export const Navbar = () => {
             <li>
               <Link
                 href='/'
-                className='block rounded-lg px-3 py-2 text-gray-700 font-medium transition hover:bg-indigo-50 hover:text-indigo-600'
+                className='block rounded-lg px-3 py-2 text-gray-800 text-base font-normal transition hover:bg-cyan-50 hover:text-cyan-700'
                 onClick={() => setMobileOpen(false)}
               >
                 Home
@@ -92,7 +92,7 @@ export const Navbar = () => {
             <li>
               <Link
                 href='/products'
-                className='block rounded-lg px-3 py-2 text-gray-700 font-medium transition hover:bg-indigo-50 hover:text-indigo-600'
+                className='block rounded-lg px-3 py-2 text-gray-800 text-base font-normal transition hover:bg-cyan-50 hover:text-cyan-700'
                 onClick={() => setMobileOpen(false)}
               >
                 Products
@@ -101,7 +101,7 @@ export const Navbar = () => {
             <li>
               <Link
                 href='/checkout'
-                className='block rounded-lg px-3 py-2 text-gray-700 font-medium transition hover:bg-indigo-50 hover:text-indigo-600'
+                className='block rounded-lg px-3 py-2 text-gray-800 text-base font-normal transition hover:bg-cyan-50 hover:text-cyan-700'
                 onClick={() => setMobileOpen(false)}
               >
                 Checkout
