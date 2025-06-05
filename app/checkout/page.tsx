@@ -36,7 +36,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className='bg-gray-50 py-12'>
+    <div>
       <div className='container mx-auto px-6 sm:px-8 lg:px-16'>
         <h1 className='text-4xl font-extrabold text-cyan-700 text-center mb-10'>Checkout</h1>
 
