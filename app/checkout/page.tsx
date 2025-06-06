@@ -21,8 +21,8 @@ export default function CheckoutPage() {
           width={200}
           height={200}
         />
-        <h1 className='text-3xl font-extrabold text-cyan-700 mb-4'>Your Cart Is Empty</h1>
-        <p className='text-gray-600 mb-6'>
+        <h1 className='text-3xl font-extrabold text-cyan-700 text-center mb-4'>Your Cart Is Empty</h1>
+        <p className='text-gray-600 text-center mb-6'>
           Looks like you haven’t added anything to your cart yet.
         </p>
         <Button

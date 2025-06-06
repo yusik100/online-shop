@@ -22,13 +22,13 @@ export default function SuccessPage() {
         width={200}
         height={200}
       />
-      <h1 className='text-3xl font-extrabold text-cyan-700 mb-4'>Payment Successful!</h1>
-      <p className='text-gray-600 mb-6'>
+      <h1 className='text-3xl font-extrabold text-cyan-700 text-center mb-4'>Payment Successful!</h1>
+      <p className='text-gray-600 text-center mb-6'>
         Thank you for your purchase. Your order is being processed.
       </p>
       <Button
         asChild
-        className='bg-cyan-600 text-white rounded-lg px-6 py-3 hover:bg-cyan-700 transition w-full sm:w-auto'
+        className= 'bg-cyan-600 text-white rounded-lg px-6 py-3 hover:bg-cyan-700 transition w-full sm:w-auto'
       >
         <Link href='/products'>Continue Shopping</Link>
       </Button>
